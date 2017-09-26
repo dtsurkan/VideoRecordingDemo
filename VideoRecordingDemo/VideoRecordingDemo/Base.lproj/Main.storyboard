@@ -1,24 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1VZ-ed-pJN">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Audio Recording View Controller-->
+        <scene sceneID="fI6-Bt-XtW">
+            <objects>
+                <viewController id="1VZ-ed-pJN" customClass="AudioRecordingViewController" customModule="VideoRecordingDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="blJ-Ya-XWz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKO-TS-REd" customClass="CaptureButton" customModule="VideoRecordingDemo" customModuleProvider="target">
+                                <rect key="frame" x="152.5" y="298.5" width="70" height="70"/>
+                                <state key="normal" image="Camera Icon"/>
+                                <connections>
+                                    <action selector="camptureButtonReleased:" destination="1VZ-ed-pJN" eventType="touchUpInside" id="BUY-MN-D5e"/>
+                                    <action selector="camptureButtonReleased:" destination="1VZ-ed-pJN" eventType="touchCancel" id="HUd-6F-SxP"/>
+                                    <action selector="camptureButtonReleased:" destination="1VZ-ed-pJN" eventType="touchDragExit" id="QXj-7t-Ghy"/>
+                                    <action selector="camptureButtonTouched:" destination="1VZ-ed-pJN" eventType="touchDown" id="Typ-0n-OC0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dKO-TS-REd" firstAttribute="centerY" secondItem="blJ-Ya-XWz" secondAttribute="centerY" id="ndC-bR-eTB"/>
+                            <constraint firstItem="dKO-TS-REd" firstAttribute="centerX" secondItem="blJ-Ya-XWz" secondAttribute="centerX" id="ol8-PP-L1T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2q9-7g-Ii6"/>
+                    </view>
+                    <connections>
+                        <outlet property="captureButton" destination="dKO-TS-REd" id="fxu-c7-l3a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9nm-Zr-6M3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-846" y="118"/>
+        </scene>
+        <!--Video Recording View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="VideoRecordingViewController" customModule="VideoRecordingDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dww-VW-WG8" customClass="CameraView" customModule="VideoRecordingDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="539"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8qN-c4-JTh">
+                                <rect key="frame" x="0.0" y="539" width="375" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80r-iH-29B" customClass="CaptureButton" customModule="VideoRecordingDemo" customModuleProvider="target">
+                                        <rect key="frame" x="146.5" y="29" width="82" height="70"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="82" id="0IP-3s-8C7"/>
+                                            <constraint firstAttribute="height" constant="70" id="QCZ-l2-S4b"/>
+                                        </constraints>
+                                        <state key="normal" image="Camera Icon"/>
+                                        <connections>
+                                            <action selector="camptureVideoButtonReleased:" destination="BYZ-38-t0r" eventType="touchCancel" id="7Xl-gL-ygs"/>
+                                            <action selector="camptureVideoButtonReleased:" destination="BYZ-38-t0r" eventType="touchDragExit" id="CQV-hN-dOu"/>
+                                            <action selector="camptureVideoButtonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ekc-wC-QCn"/>
+                                            <action selector="camptureVideoButtonTouched:" destination="BYZ-38-t0r" eventType="touchDown" id="zyu-gg-K6Z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFE-9h-F4B">
+                                        <rect key="frame" x="250.5" y="44" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="h6l-Rm-9PS"/>
+                                            <constraint firstAttribute="width" constant="40" id="n4e-mw-EDk"/>
+                                        </constraints>
+                                        <state key="normal" image="Change Camera Icon"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="80r-iH-29B" firstAttribute="centerY" secondItem="8qN-c4-JTh" secondAttribute="centerY" id="AzX-58-Xc6"/>
+                                    <constraint firstItem="80r-iH-29B" firstAttribute="centerX" secondItem="8qN-c4-JTh" secondAttribute="centerX" id="NM6-Kp-ymF"/>
+                                    <constraint firstItem="hFE-9h-F4B" firstAttribute="leading" secondItem="80r-iH-29B" secondAttribute="trailing" constant="22" id="fUF-tc-SWh"/>
+                                    <constraint firstItem="hFE-9h-F4B" firstAttribute="centerY" secondItem="8qN-c4-JTh" secondAttribute="centerY" id="xlX-n8-AwK"/>
+                                    <constraint firstAttribute="height" constant="128" id="yXC-tH-f8Z"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dww-VW-WG8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1Fy-YF-9Rk"/>
+                            <constraint firstItem="dww-VW-WG8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2O8-Bs-EqM"/>
+                            <constraint firstItem="8qN-c4-JTh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="94R-bn-nka"/>
+                            <constraint firstItem="dww-VW-WG8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="I4B-qP-fVh"/>
+                            <constraint firstItem="8qN-c4-JTh" firstAttribute="top" secondItem="dww-VW-WG8" secondAttribute="bottom" id="Z4y-KZ-qsQ"/>
+                            <constraint firstItem="8qN-c4-JTh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="erO-Nt-0vd"/>
+                            <constraint firstItem="8qN-c4-JTh" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ltT-Eg-cU0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="cameraView" destination="dww-VW-WG8" id="sUb-9F-B3y"/>
+                        <outlet property="captureButton" destination="80r-iH-29B" id="bNw-M7-gtt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Camera Icon" width="70" height="70"/>
+        <image name="Change Camera Icon" width="20" height="16"/>
+    </resources>
 </document>

@@ -7,21 +7,91 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9431C3161F7A4D57001549C5 /* CaptureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9431C3151F7A4D57001549C5 /* CaptureButton.swift */; };
+		9431C31E1F7A65AC001549C5 /* AudioRecordingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9431C3181F7A65AC001549C5 /* AudioRecordingInteractor.swift */; };
+		9431C31F1F7A65AC001549C5 /* AudioRecordingModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9431C3191F7A65AC001549C5 /* AudioRecordingModels.swift */; };
+		9431C3201F7A65AC001549C5 /* AudioRecordingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9431C31A1F7A65AC001549C5 /* AudioRecordingPresenter.swift */; };
+		9431C3211F7A65AC001549C5 /* AudioRecordingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9431C31B1F7A65AC001549C5 /* AudioRecordingRouter.swift */; };
+		9431C3221F7A65AC001549C5 /* AudioRecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9431C31C1F7A65AC001549C5 /* AudioRecordingViewController.swift */; };
+		9431C3231F7A65AC001549C5 /* AudioRecordingWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9431C31D1F7A65AC001549C5 /* AudioRecordingWorker.swift */; };
+		9431C3251F7A70F9001549C5 /* AudioMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9431C3241F7A70F9001549C5 /* AudioMan.swift */; };
 		944C7E9F1F7A438600F89470 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7E9E1F7A438600F89470 /* AppDelegate.swift */; };
-		944C7EA11F7A438600F89470 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7EA01F7A438600F89470 /* ViewController.swift */; };
 		944C7EA41F7A438600F89470 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944C7EA21F7A438600F89470 /* Main.storyboard */; };
 		944C7EA61F7A438600F89470 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 944C7EA51F7A438600F89470 /* Assets.xcassets */; };
 		944C7EA91F7A438600F89470 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944C7EA71F7A438600F89470 /* LaunchScreen.storyboard */; };
+		944C7EBA1F7A441D00F89470 /* VideoRecordingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7EB41F7A441D00F89470 /* VideoRecordingInteractor.swift */; };
+		944C7EBB1F7A441D00F89470 /* VideoRecordingModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7EB51F7A441D00F89470 /* VideoRecordingModels.swift */; };
+		944C7EBC1F7A441D00F89470 /* VideoRecordingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7EB61F7A441D00F89470 /* VideoRecordingPresenter.swift */; };
+		944C7EBD1F7A441D00F89470 /* VideoRecordingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7EB71F7A441D00F89470 /* VideoRecordingRouter.swift */; };
+		944C7EBE1F7A441D00F89470 /* VideoRecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7EB81F7A441D00F89470 /* VideoRecordingViewController.swift */; };
+		944C7EBF1F7A441D00F89470 /* VideoRecordingWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7EB91F7A441D00F89470 /* VideoRecordingWorker.swift */; };
+		944C7ECC1F7A449E00F89470 /* ArrowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7EC21F7A449E00F89470 /* ArrowButton.swift */; };
+		944C7ECD1F7A449E00F89470 /* CameraMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7EC31F7A449E00F89470 /* CameraMan.swift */; };
+		944C7ECE1F7A449E00F89470 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7EC41F7A449E00F89470 /* CameraView.swift */; };
+		944C7ED31F7A449E00F89470 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7ECA1F7A449E00F89470 /* EmptyView.swift */; };
+		944C7ED41F7A449E00F89470 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7ECB1F7A449E00F89470 /* StackView.swift */; };
+		944C7ED71F7A451D00F89470 /* UIViewExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7ED61F7A451D00F89470 /* UIViewExtentions.swift */; };
+		944C7EE01F7A461200F89470 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7EDA1F7A461200F89470 /* Config.swift */; };
+		944C7EE11F7A461200F89470 /* EventHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7EDB1F7A461200F89470 /* EventHub.swift */; };
+		944C7EE21F7A461200F89470 /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7EDC1F7A461200F89470 /* Fetcher.swift */; };
+		944C7EE31F7A461200F89470 /* Once.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7EDD1F7A461200F89470 /* Once.swift */; };
+		944C7EE41F7A461200F89470 /* Permission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7EDE1F7A461200F89470 /* Permission.swift */; };
+		944C7EE51F7A461200F89470 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7EDF1F7A461200F89470 /* Utils.swift */; };
+		944C7EEC1F7A46A500F89470 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7EE71F7A46A500F89470 /* Album.swift */; };
+		944C7EED1F7A46A500F89470 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7EE81F7A46A500F89470 /* Cart.swift */; };
+		944C7EEE1F7A46A500F89470 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7EE91F7A46A500F89470 /* Image.swift */; };
+		944C7EEF1F7A46A500F89470 /* ImagesLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7EEA1F7A46A500F89470 /* ImagesLibrary.swift */; };
+		944C7EF01F7A46A500F89470 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7EEB1F7A46A500F89470 /* Video.swift */; };
+		944C7EF21F7A478B00F89470 /* SwiftExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7EF11F7A478B00F89470 /* SwiftExtentions.swift */; };
+		944C7EF51F7A480F00F89470 /* TripleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7EF41F7A480F00F89470 /* TripleButton.swift */; };
+		944C7EF71F7A496700F89470 /* ImageExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7EF61F7A496700F89470 /* ImageExtentions.swift */; };
+		E3118A045313DB1EB9A1B152 /* Pods_VideoRecordingDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D535DD2EDBF2EFC21547F8E /* Pods_VideoRecordingDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1471F2E920CC982F771DE7B9 /* Pods-VideoRecordingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoRecordingDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoRecordingDemo/Pods-VideoRecordingDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		7D535DD2EDBF2EFC21547F8E /* Pods_VideoRecordingDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoRecordingDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9431C3151F7A4D57001549C5 /* CaptureButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureButton.swift; sourceTree = "<group>"; };
+		9431C3181F7A65AC001549C5 /* AudioRecordingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecordingInteractor.swift; sourceTree = "<group>"; };
+		9431C3191F7A65AC001549C5 /* AudioRecordingModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecordingModels.swift; sourceTree = "<group>"; };
+		9431C31A1F7A65AC001549C5 /* AudioRecordingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecordingPresenter.swift; sourceTree = "<group>"; };
+		9431C31B1F7A65AC001549C5 /* AudioRecordingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecordingRouter.swift; sourceTree = "<group>"; };
+		9431C31C1F7A65AC001549C5 /* AudioRecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecordingViewController.swift; sourceTree = "<group>"; };
+		9431C31D1F7A65AC001549C5 /* AudioRecordingWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecordingWorker.swift; sourceTree = "<group>"; };
+		9431C3241F7A70F9001549C5 /* AudioMan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioMan.swift; sourceTree = "<group>"; };
 		944C7E9B1F7A438600F89470 /* VideoRecordingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoRecordingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		944C7E9E1F7A438600F89470 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		944C7EA01F7A438600F89470 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		944C7EA31F7A438600F89470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		944C7EA51F7A438600F89470 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		944C7EA81F7A438600F89470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		944C7EAA1F7A438600F89470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		944C7EB41F7A441D00F89470 /* VideoRecordingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecordingInteractor.swift; sourceTree = "<group>"; };
+		944C7EB51F7A441D00F89470 /* VideoRecordingModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecordingModels.swift; sourceTree = "<group>"; };
+		944C7EB61F7A441D00F89470 /* VideoRecordingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecordingPresenter.swift; sourceTree = "<group>"; };
+		944C7EB71F7A441D00F89470 /* VideoRecordingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecordingRouter.swift; sourceTree = "<group>"; };
+		944C7EB81F7A441D00F89470 /* VideoRecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecordingViewController.swift; sourceTree = "<group>"; };
+		944C7EB91F7A441D00F89470 /* VideoRecordingWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecordingWorker.swift; sourceTree = "<group>"; };
+		944C7EC21F7A449E00F89470 /* ArrowButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrowButton.swift; sourceTree = "<group>"; };
+		944C7EC31F7A449E00F89470 /* CameraMan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraMan.swift; sourceTree = "<group>"; };
+		944C7EC41F7A449E00F89470 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		944C7ECA1F7A449E00F89470 /* EmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		944C7ECB1F7A449E00F89470 /* StackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		944C7ED61F7A451D00F89470 /* UIViewExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtentions.swift; sourceTree = "<group>"; };
+		944C7EDA1F7A461200F89470 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		944C7EDB1F7A461200F89470 /* EventHub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventHub.swift; sourceTree = "<group>"; };
+		944C7EDC1F7A461200F89470 /* Fetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fetcher.swift; sourceTree = "<group>"; };
+		944C7EDD1F7A461200F89470 /* Once.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Once.swift; sourceTree = "<group>"; };
+		944C7EDE1F7A461200F89470 /* Permission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Permission.swift; sourceTree = "<group>"; };
+		944C7EDF1F7A461200F89470 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		944C7EE71F7A46A500F89470 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		944C7EE81F7A46A500F89470 /* Cart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		944C7EE91F7A46A500F89470 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		944C7EEA1F7A46A500F89470 /* ImagesLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesLibrary.swift; sourceTree = "<group>"; };
+		944C7EEB1F7A46A500F89470 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		944C7EF11F7A478B00F89470 /* SwiftExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftExtentions.swift; sourceTree = "<group>"; };
+		944C7EF41F7A480F00F89470 /* TripleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripleButton.swift; sourceTree = "<group>"; };
+		944C7EF61F7A496700F89470 /* ImageExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtentions.swift; sourceTree = "<group>"; };
+		CBF4CF2D4AE5E68DF8FC7810 /* Pods-VideoRecordingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoRecordingDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoRecordingDemo/Pods-VideoRecordingDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +99,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3118A045313DB1EB9A1B152 /* Pods_VideoRecordingDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08C871D177C9C8751ABC490F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1471F2E920CC982F771DE7B9 /* Pods-VideoRecordingDemo.debug.xcconfig */,
+				CBF4CF2D4AE5E68DF8FC7810 /* Pods-VideoRecordingDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9431C3171F7A6596001549C5 /* AudioRecording */ = {
+			isa = PBXGroup;
+			children = (
+				9431C3181F7A65AC001549C5 /* AudioRecordingInteractor.swift */,
+				9431C3191F7A65AC001549C5 /* AudioRecordingModels.swift */,
+				9431C31A1F7A65AC001549C5 /* AudioRecordingPresenter.swift */,
+				9431C31B1F7A65AC001549C5 /* AudioRecordingRouter.swift */,
+				9431C31C1F7A65AC001549C5 /* AudioRecordingViewController.swift */,
+				9431C31D1F7A65AC001549C5 /* AudioRecordingWorker.swift */,
+			);
+			path = AudioRecording;
+			sourceTree = "<group>";
+		};
 		944C7E921F7A438600F89470 = {
 			isa = PBXGroup;
 			children = (
 				944C7E9D1F7A438600F89470 /* VideoRecordingDemo */,
 				944C7E9C1F7A438600F89470 /* Products */,
+				08C871D177C9C8751ABC490F /* Pods */,
+				EEF71BAD40502E8811EF0CEC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +149,138 @@
 		944C7E9D1F7A438600F89470 /* VideoRecordingDemo */ = {
 			isa = PBXGroup;
 			children = (
+				944C7EB21F7A43F100F89470 /* Application */,
+				944C7EB11F7A43F100F89470 /* Shared */,
+				944C7EB01F7A43F100F89470 /* Modules */,
 				944C7E9E1F7A438600F89470 /* AppDelegate.swift */,
-				944C7EA01F7A438600F89470 /* ViewController.swift */,
 				944C7EA21F7A438600F89470 /* Main.storyboard */,
 				944C7EA51F7A438600F89470 /* Assets.xcassets */,
 				944C7EA71F7A438600F89470 /* LaunchScreen.storyboard */,
 				944C7EAA1F7A438600F89470 /* Info.plist */,
 			);
 			path = VideoRecordingDemo;
+			sourceTree = "<group>";
+		};
+		944C7EB01F7A43F100F89470 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				9431C3171F7A6596001549C5 /* AudioRecording */,
+				944C7EB31F7A440900F89470 /* VideoRecording */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		944C7EB11F7A43F100F89470 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				944C7EE61F7A46A500F89470 /* Models */,
+				944C7ED81F7A45D400F89470 /* Helpers */,
+				944C7ED51F7A451000F89470 /* Extentions */,
+				944C7EC01F7A449E00F89470 /* Views */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		944C7EB21F7A43F100F89470 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		944C7EB31F7A440900F89470 /* VideoRecording */ = {
+			isa = PBXGroup;
+			children = (
+				944C7EB41F7A441D00F89470 /* VideoRecordingInteractor.swift */,
+				944C7EB51F7A441D00F89470 /* VideoRecordingModels.swift */,
+				944C7EB61F7A441D00F89470 /* VideoRecordingPresenter.swift */,
+				944C7EB71F7A441D00F89470 /* VideoRecordingRouter.swift */,
+				944C7EB81F7A441D00F89470 /* VideoRecordingViewController.swift */,
+				944C7EB91F7A441D00F89470 /* VideoRecordingWorker.swift */,
+			);
+			path = VideoRecording;
+			sourceTree = "<group>";
+		};
+		944C7EC01F7A449E00F89470 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				944C7EF31F7A480000F89470 /* CustomUI */,
+				944C7EC11F7A449E00F89470 /* Camera */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		944C7EC11F7A449E00F89470 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				944C7EC21F7A449E00F89470 /* ArrowButton.swift */,
+				944C7EC31F7A449E00F89470 /* CameraMan.swift */,
+				944C7EC41F7A449E00F89470 /* CameraView.swift */,
+				944C7ECA1F7A449E00F89470 /* EmptyView.swift */,
+				944C7ECB1F7A449E00F89470 /* StackView.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		944C7ED51F7A451000F89470 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				944C7ED61F7A451D00F89470 /* UIViewExtentions.swift */,
+				944C7EF11F7A478B00F89470 /* SwiftExtentions.swift */,
+				944C7EF61F7A496700F89470 /* ImageExtentions.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		944C7ED81F7A45D400F89470 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				944C7ED91F7A461200F89470 /* Camera */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		944C7ED91F7A461200F89470 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				944C7EDA1F7A461200F89470 /* Config.swift */,
+				944C7EDB1F7A461200F89470 /* EventHub.swift */,
+				944C7EDC1F7A461200F89470 /* Fetcher.swift */,
+				944C7EDD1F7A461200F89470 /* Once.swift */,
+				944C7EDE1F7A461200F89470 /* Permission.swift */,
+				944C7EDF1F7A461200F89470 /* Utils.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		944C7EE61F7A46A500F89470 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				944C7EE71F7A46A500F89470 /* Album.swift */,
+				944C7EE81F7A46A500F89470 /* Cart.swift */,
+				944C7EE91F7A46A500F89470 /* Image.swift */,
+				944C7EEA1F7A46A500F89470 /* ImagesLibrary.swift */,
+				944C7EEB1F7A46A500F89470 /* Video.swift */,
+				9431C3241F7A70F9001549C5 /* AudioMan.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		944C7EF31F7A480000F89470 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				944C7EF41F7A480F00F89470 /* TripleButton.swift */,
+				9431C3151F7A4D57001549C5 /* CaptureButton.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		EEF71BAD40502E8811EF0CEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D535DD2EDBF2EFC21547F8E /* Pods_VideoRecordingDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +290,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 944C7EAD1F7A438600F89470 /* Build configuration list for PBXNativeTarget "VideoRecordingDemo" */;
 			buildPhases = (
+				1D02F5674BB81DCF2E6076EB /* [CP] Check Pods Manifest.lock */,
 				944C7E971F7A438600F89470 /* Sources */,
 				944C7E981F7A438600F89470 /* Frameworks */,
 				944C7E991F7A438600F89470 /* Resources */,
+				34DC98CBB1B6FA0B5B0B5D81 /* [CP] Embed Pods Frameworks */,
+				AB049CEE4DA2534347517820 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +353,100 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D02F5674BB81DCF2E6076EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VideoRecordingDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34DC98CBB1B6FA0B5B0B5D81 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VideoRecordingDemo/Pods-VideoRecordingDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PAPermissions/PAPermissions.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PAPermissions.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoRecordingDemo/Pods-VideoRecordingDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB049CEE4DA2534347517820 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoRecordingDemo/Pods-VideoRecordingDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		944C7E971F7A438600F89470 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				944C7EA11F7A438600F89470 /* ViewController.swift in Sources */,
+				9431C3231F7A65AC001549C5 /* AudioRecordingWorker.swift in Sources */,
+				944C7EBD1F7A441D00F89470 /* VideoRecordingRouter.swift in Sources */,
+				944C7EEF1F7A46A500F89470 /* ImagesLibrary.swift in Sources */,
+				9431C31F1F7A65AC001549C5 /* AudioRecordingModels.swift in Sources */,
+				944C7ED31F7A449E00F89470 /* EmptyView.swift in Sources */,
+				9431C3201F7A65AC001549C5 /* AudioRecordingPresenter.swift in Sources */,
+				9431C3211F7A65AC001549C5 /* AudioRecordingRouter.swift in Sources */,
+				9431C3221F7A65AC001549C5 /* AudioRecordingViewController.swift in Sources */,
+				944C7EBA1F7A441D00F89470 /* VideoRecordingInteractor.swift in Sources */,
+				944C7EE01F7A461200F89470 /* Config.swift in Sources */,
+				944C7EBB1F7A441D00F89470 /* VideoRecordingModels.swift in Sources */,
+				944C7ECE1F7A449E00F89470 /* CameraView.swift in Sources */,
+				944C7EE11F7A461200F89470 /* EventHub.swift in Sources */,
+				944C7ECC1F7A449E00F89470 /* ArrowButton.swift in Sources */,
+				944C7EE31F7A461200F89470 /* Once.swift in Sources */,
+				944C7EEE1F7A46A500F89470 /* Image.swift in Sources */,
+				944C7ECD1F7A449E00F89470 /* CameraMan.swift in Sources */,
+				944C7EED1F7A46A500F89470 /* Cart.swift in Sources */,
+				9431C3251F7A70F9001549C5 /* AudioMan.swift in Sources */,
+				944C7EF01F7A46A500F89470 /* Video.swift in Sources */,
+				944C7EE21F7A461200F89470 /* Fetcher.swift in Sources */,
+				944C7EBF1F7A441D00F89470 /* VideoRecordingWorker.swift in Sources */,
+				944C7ED71F7A451D00F89470 /* UIViewExtentions.swift in Sources */,
+				944C7ED41F7A449E00F89470 /* StackView.swift in Sources */,
+				944C7EE41F7A461200F89470 /* Permission.swift in Sources */,
 				944C7E9F1F7A438600F89470 /* AppDelegate.swift in Sources */,
+				9431C31E1F7A65AC001549C5 /* AudioRecordingInteractor.swift in Sources */,
+				944C7EBC1F7A441D00F89470 /* VideoRecordingPresenter.swift in Sources */,
+				944C7EE51F7A461200F89470 /* Utils.swift in Sources */,
+				9431C3161F7A4D57001549C5 /* CaptureButton.swift in Sources */,
+				944C7EBE1F7A441D00F89470 /* VideoRecordingViewController.swift in Sources */,
+				944C7EEC1F7A46A500F89470 /* Album.swift in Sources */,
+				944C7EF21F7A478B00F89470 /* SwiftExtentions.swift in Sources */,
+				944C7EF51F7A480F00F89470 /* TripleButton.swift in Sources */,
+				944C7EF71F7A496700F89470 /* ImageExtentions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +581,7 @@
 		};
 		944C7EAE1F7A438600F89470 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1471F2E920CC982F771DE7B9 /* Pods-VideoRecordingDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -288,6 +598,7 @@
 		};
 		944C7EAF1F7A438600F89470 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBF4CF2D4AE5E68DF8FC7810 /* Pods-VideoRecordingDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

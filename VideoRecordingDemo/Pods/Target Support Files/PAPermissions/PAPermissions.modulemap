@@ -1,0 +1,6 @@
+framework module PAPermissions {
+  umbrella header "PAPermissions-umbrella.h"
+
+  export *
+  module * { export * }
+}

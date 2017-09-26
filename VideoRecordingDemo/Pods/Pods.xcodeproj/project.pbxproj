@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C546A66D04AF14189DA068FD764E67D /* PAPermissions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF2C5756EF032938B0141804B9E4C4A /* PAPermissions-dummy.m */; };
+		220BED4466358F0834C0458FBFE42858 /* PAConstraintsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1034FA58F02563B02C0473830DE2ED /* PAConstraintsUtils.swift */; };
+		2C8051D98B8CB9D33C6D93CC94D1F672 /* PANotificationsPermissionsCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532C74B8DAB7D0808179C2E1E02D323C /* PANotificationsPermissionsCheck.swift */; };
+		30986FFEAB578C78A56785B520E32FD3 /* PAPermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF401F2E23E609EFFA8FC78A5FAF8D1 /* PAPermissionsView.swift */; };
+		3848212808ACB594200667F1B0EF0055 /* PAPermissionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C175CB494AE0E2B1C5E0FB2B70B7E51D /* PAPermissionsTableViewCell.swift */; };
+		4A4043F6D7D2F62CED2229DAD923D0EF /* PAPermissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61840D5C796087DBF9899FED49C4FB39 /* PAPermissionsViewController.swift */; };
+		6047EA58103B5B41CB2E376100246505 /* PABluetoothPermissionsCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1211DDECE577846F294620CD6946A11 /* PABluetoothPermissionsCheck.swift */; };
+		60AE0984D77FC899E590BCF20D466069 /* PAPhotoLibraryPermissionsCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E058C063B273165D51C2D9ECB48A3D /* PAPhotoLibraryPermissionsCheck.swift */; };
+		6466BA62EA670F6A6CA297E451AE8094 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D5F6970F4BDBDD470070980D137FF2 /* Foundation.framework */; };
+		650CDD07D08307FA4ACC793FEA34521C /* Pods-VideoRecordingDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 700C4CBC819E0767512A8C57FAD2425F /* Pods-VideoRecordingDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AB629F90AD43DFDB752563384BF9710 /* PAMicrophonePermissionsCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7402E3CEEEFCB766C7D3ADEA2B64B072 /* PAMicrophonePermissionsCheck.swift */; };
+		71261737CCEAF121FD24147A2B57C960 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F34171CA5CF60337A77ECBC5B5AF32D /* CoreLocation.framework */; };
+		7EF49A697E7E2F0403465C2FE6557C31 /* Pods-VideoRecordingDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0DA2C5313DB33156103FD9910210CA /* Pods-VideoRecordingDemo-dummy.m */; };
+		83F1BD840F52E09B88AEF488DCD2303E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394F737F789AE3D1D834A08A8CC56112 /* CoreMotion.framework */; };
+		8C34C5D6BAF56B92EA276A5D389EDAD1 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDAA6E67E53545489B209ED707EB1DE9 /* Photos.framework */; };
+		9A658DED3AC7F58D7086D7A7C35DE1C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D5F6970F4BDBDD470070980D137FF2 /* Foundation.framework */; };
+		A53F8809BE9F77546B2CF355BDAA080B /* PAEventKitPermissionsCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259464431DDF28D3D5ACC64395244427 /* PAEventKitPermissionsCheck.swift */; };
+		A8D995CA920756161BAA2CFBD63BC464 /* PACNContactsPermissionsCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC14AB58E8B731CD106CB8AD98B28E2 /* PACNContactsPermissionsCheck.swift */; };
+		AD896E154C5288FA8CF86FE4CD2A3870 /* PACameraPermissionsCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB68F6DAD76501FAF119C0255C06C7B1 /* PACameraPermissionsCheck.swift */; };
+		BBA6FD230F6C53567F982F1DF707636D /* PAPermissionsCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAD3897554623C0E9C16BD8C021AA8 /* PAPermissionsCheck.swift */; };
+		C3384609A73F650D2AB7CE9225E6C812 /* pa_icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99DED8A37A9276D9D8BD79BD0E07D5C5 /* pa_icons.xcassets */; };
+		D79CE3B17052723E71524EBE68C167C2 /* PAPermissions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CBDC54414B816B6A89D633BAD851190 /* PAPermissions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E20A898DFECDF36FAC303B38D58C40BC /* PAABAddressBookCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B654AA04D069740D17A5B85A7DB384 /* PAABAddressBookCheck.swift */; };
+		ED0002042F9E710C780C33B07850BDBC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4060E854A599F55F44980AED9FAB5902 /* AVFoundation.framework */; };
+		F40229A29C2DF48D876E802B4DF696BB /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C0E41036820626C8492C6EC60B94491 /* CoreBluetooth.framework */; };
+		F708A05577BC8FCDCFFF482E7B31FA88 /* PAUNNotificationPermissionsCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FE82886B09094341459548654423DA /* PAUNNotificationPermissionsCheck.swift */; };
+		FCCC245C369F9FCB542BC2B5B07683AC /* PAMotionFitnessPermissionsCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B2A0E1B6446FFF4692042A04320785 /* PAMotionFitnessPermissionsCheck.swift */; };
+		FE85B82330385505650B338D07C6FB34 /* PALocationPermissionsCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4CBE270668D110529649D6F01B707 /* PALocationPermissionsCheck.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E33B70645CC87A4FF7329C10FB338139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D20A377BC0EC578792F2586049F0CEA;
+			remoteInfo = PAPermissions;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0249AF71D0124DA7B524FB633A6095BC /* Pods-VideoRecordingDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VideoRecordingDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		0A1034FA58F02563B02C0473830DE2ED /* PAConstraintsUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PAConstraintsUtils.swift; path = PAPermissions/Classes/Utils/PAConstraintsUtils.swift; sourceTree = "<group>"; };
+		0CBDC54414B816B6A89D633BAD851190 /* PAPermissions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PAPermissions-umbrella.h"; sourceTree = "<group>"; };
+		16A235C4787D138B6200468BF814025B /* Pods-VideoRecordingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoRecordingDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		1F34171CA5CF60337A77ECBC5B5AF32D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		21FE82886B09094341459548654423DA /* PAUNNotificationPermissionsCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PAUNNotificationPermissionsCheck.swift; path = PAPermissions/Classes/Checks/PAUNNotificationPermissionsCheck.swift; sourceTree = "<group>"; };
+		259464431DDF28D3D5ACC64395244427 /* PAEventKitPermissionsCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PAEventKitPermissionsCheck.swift; path = PAPermissions/Classes/Checks/PAEventKitPermissionsCheck.swift; sourceTree = "<group>"; };
+		27F0BACD3D97B2BF946DCB4DB40CA78F /* Pods-VideoRecordingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoRecordingDemo.release.xcconfig"; sourceTree = "<group>"; };
+		28B2A0E1B6446FFF4692042A04320785 /* PAMotionFitnessPermissionsCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PAMotionFitnessPermissionsCheck.swift; path = PAPermissions/Classes/Checks/PAMotionFitnessPermissionsCheck.swift; sourceTree = "<group>"; };
+		2B918BF9951D09FC45E6C698F670FCA7 /* PAPermissions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PAPermissions-prefix.pch"; sourceTree = "<group>"; };
+		2CC14AB58E8B731CD106CB8AD98B28E2 /* PACNContactsPermissionsCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PACNContactsPermissionsCheck.swift; path = PAPermissions/Classes/Checks/PACNContactsPermissionsCheck.swift; sourceTree = "<group>"; };
+		2EDAD3897554623C0E9C16BD8C021AA8 /* PAPermissionsCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PAPermissionsCheck.swift; path = PAPermissions/Classes/Checks/PAPermissionsCheck.swift; sourceTree = "<group>"; };
+		394F737F789AE3D1D834A08A8CC56112 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		3B0DA2C5313DB33156103FD9910210CA /* Pods-VideoRecordingDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VideoRecordingDemo-dummy.m"; sourceTree = "<group>"; };
+		3D9B611BB0B9E38A619764EC58B4ED97 /* PAPermissions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PAPermissions.xcconfig; sourceTree = "<group>"; };
+		4060E854A599F55F44980AED9FAB5902 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		475B56E772E614C38D8A04DE68D7C48F /* PAPermissions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PAPermissions.framework; path = PAPermissions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52B0B26AAE9E2C02161D5AC960C5EF01 /* Pods-VideoRecordingDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VideoRecordingDemo-resources.sh"; sourceTree = "<group>"; };
+		532C74B8DAB7D0808179C2E1E02D323C /* PANotificationsPermissionsCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PANotificationsPermissionsCheck.swift; path = PAPermissions/Classes/Checks/PANotificationsPermissionsCheck.swift; sourceTree = "<group>"; };
+		54B654AA04D069740D17A5B85A7DB384 /* PAABAddressBookCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PAABAddressBookCheck.swift; path = PAPermissions/Classes/Checks/PAABAddressBookCheck.swift; sourceTree = "<group>"; };
+		56CE1DD5D5C52211AB2E4D4972FDD610 /* PAPermissions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PAPermissions.modulemap; sourceTree = "<group>"; };
+		61840D5C796087DBF9899FED49C4FB39 /* PAPermissionsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PAPermissionsViewController.swift; path = PAPermissions/Classes/PAPermissionsViewController.swift; sourceTree = "<group>"; };
+		652062A1954E9449ADC96D696E399534 /* Pods-VideoRecordingDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-VideoRecordingDemo.modulemap"; sourceTree = "<group>"; };
+		700C4CBC819E0767512A8C57FAD2425F /* Pods-VideoRecordingDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VideoRecordingDemo-umbrella.h"; sourceTree = "<group>"; };
+		7402E3CEEEFCB766C7D3ADEA2B64B072 /* PAMicrophonePermissionsCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PAMicrophonePermissionsCheck.swift; path = PAPermissions/Classes/Checks/PAMicrophonePermissionsCheck.swift; sourceTree = "<group>"; };
+		7C0E41036820626C8492C6EC60B94491 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreBluetooth.framework; sourceTree = DEVELOPER_DIR; };
+		8BF401F2E23E609EFFA8FC78A5FAF8D1 /* PAPermissionsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PAPermissionsView.swift; path = PAPermissions/Classes/PAPermissionsView.swift; sourceTree = "<group>"; };
+		8FADB1F0DA1533A8B9410A965EFEF209 /* Pods-VideoRecordingDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VideoRecordingDemo-frameworks.sh"; sourceTree = "<group>"; };
+		92D5F6970F4BDBDD470070980D137FF2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97E058C063B273165D51C2D9ECB48A3D /* PAPhotoLibraryPermissionsCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PAPhotoLibraryPermissionsCheck.swift; path = PAPermissions/Classes/Checks/PAPhotoLibraryPermissionsCheck.swift; sourceTree = "<group>"; };
+		99DED8A37A9276D9D8BD79BD0E07D5C5 /* pa_icons.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = pa_icons.xcassets; path = PAPermissions/Assets/pa_icons.xcassets; sourceTree = "<group>"; };
+		9D3C9A4BC331CE3C3AB853BDE61D9119 /* Pods_VideoRecordingDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VideoRecordingDemo.framework; path = "Pods-VideoRecordingDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1211DDECE577846F294620CD6946A11 /* PABluetoothPermissionsCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PABluetoothPermissionsCheck.swift; path = PAPermissions/Classes/Checks/PABluetoothPermissionsCheck.swift; sourceTree = "<group>"; };
+		A3A4CBE270668D110529649D6F01B707 /* PALocationPermissionsCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PALocationPermissionsCheck.swift; path = PAPermissions/Classes/Checks/PALocationPermissionsCheck.swift; sourceTree = "<group>"; };
+		ACF2C5756EF032938B0141804B9E4C4A /* PAPermissions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PAPermissions-dummy.m"; sourceTree = "<group>"; };
+		BA8442BFEA171D7BED159857E45AAF4E /* Pods-VideoRecordingDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VideoRecordingDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BAF4E1E105FFFF7E1EA3667BBCBD891F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDAA6E67E53545489B209ED707EB1DE9 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
+		C175CB494AE0E2B1C5E0FB2B70B7E51D /* PAPermissionsTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PAPermissionsTableViewCell.swift; path = PAPermissions/Classes/PAPermissionsTableViewCell.swift; sourceTree = "<group>"; };
+		DCBE0A001E443154980843B60D96776B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB68F6DAD76501FAF119C0255C06C7B1 /* PACameraPermissionsCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PACameraPermissionsCheck.swift; path = PAPermissions/Classes/Checks/PACameraPermissionsCheck.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E91AA560CCD94724B8EF9BE6BF44680 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED0002042F9E710C780C33B07850BDBC /* AVFoundation.framework in Frameworks */,
+				F40229A29C2DF48D876E802B4DF696BB /* CoreBluetooth.framework in Frameworks */,
+				71261737CCEAF121FD24147A2B57C960 /* CoreLocation.framework in Frameworks */,
+				83F1BD840F52E09B88AEF488DCD2303E /* CoreMotion.framework in Frameworks */,
+				6466BA62EA670F6A6CA297E451AE8094 /* Foundation.framework in Frameworks */,
+				8C34C5D6BAF56B92EA276A5D389EDAD1 /* Photos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AE8E904993FB450A29CE82D4E1E9511 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A658DED3AC7F58D7086D7A7C35DE1C0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09575CDC6E7AF3F9E645B581CF8F9749 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D4D86652DFFF24675074A3413FB60DE /* PAPermissions */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7FB317C5C66462C733B2F427E06CFA4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19C84C7701DD58D30D8F0FB8AF57D641 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				290F9A294477EE1B9920F9CCD2178EED /* Pods-VideoRecordingDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1BF43C4C9077FAA741FFF0974F63D26B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				475B56E772E614C38D8A04DE68D7C48F /* PAPermissions.framework */,
+				9D3C9A4BC331CE3C3AB853BDE61D9119 /* Pods_VideoRecordingDemo.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		290F9A294477EE1B9920F9CCD2178EED /* Pods-VideoRecordingDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DCBE0A001E443154980843B60D96776B /* Info.plist */,
+				652062A1954E9449ADC96D696E399534 /* Pods-VideoRecordingDemo.modulemap */,
+				BA8442BFEA171D7BED159857E45AAF4E /* Pods-VideoRecordingDemo-acknowledgements.markdown */,
+				0249AF71D0124DA7B524FB633A6095BC /* Pods-VideoRecordingDemo-acknowledgements.plist */,
+				3B0DA2C5313DB33156103FD9910210CA /* Pods-VideoRecordingDemo-dummy.m */,
+				8FADB1F0DA1533A8B9410A965EFEF209 /* Pods-VideoRecordingDemo-frameworks.sh */,
+				52B0B26AAE9E2C02161D5AC960C5EF01 /* Pods-VideoRecordingDemo-resources.sh */,
+				700C4CBC819E0767512A8C57FAD2425F /* Pods-VideoRecordingDemo-umbrella.h */,
+				16A235C4787D138B6200468BF814025B /* Pods-VideoRecordingDemo.debug.xcconfig */,
+				27F0BACD3D97B2BF946DCB4DB40CA78F /* Pods-VideoRecordingDemo.release.xcconfig */,
+			);
+			name = "Pods-VideoRecordingDemo";
+			path = "Target Support Files/Pods-VideoRecordingDemo";
+			sourceTree = "<group>";
+		};
+		4D4D86652DFFF24675074A3413FB60DE /* PAPermissions */ = {
+			isa = PBXGroup;
+			children = (
+				54B654AA04D069740D17A5B85A7DB384 /* PAABAddressBookCheck.swift */,
+				A1211DDECE577846F294620CD6946A11 /* PABluetoothPermissionsCheck.swift */,
+				FB68F6DAD76501FAF119C0255C06C7B1 /* PACameraPermissionsCheck.swift */,
+				2CC14AB58E8B731CD106CB8AD98B28E2 /* PACNContactsPermissionsCheck.swift */,
+				0A1034FA58F02563B02C0473830DE2ED /* PAConstraintsUtils.swift */,
+				259464431DDF28D3D5ACC64395244427 /* PAEventKitPermissionsCheck.swift */,
+				A3A4CBE270668D110529649D6F01B707 /* PALocationPermissionsCheck.swift */,
+				7402E3CEEEFCB766C7D3ADEA2B64B072 /* PAMicrophonePermissionsCheck.swift */,
+				28B2A0E1B6446FFF4692042A04320785 /* PAMotionFitnessPermissionsCheck.swift */,
+				532C74B8DAB7D0808179C2E1E02D323C /* PANotificationsPermissionsCheck.swift */,
+				2EDAD3897554623C0E9C16BD8C021AA8 /* PAPermissionsCheck.swift */,
+				C175CB494AE0E2B1C5E0FB2B70B7E51D /* PAPermissionsTableViewCell.swift */,
+				8BF401F2E23E609EFFA8FC78A5FAF8D1 /* PAPermissionsView.swift */,
+				61840D5C796087DBF9899FED49C4FB39 /* PAPermissionsViewController.swift */,
+				97E058C063B273165D51C2D9ECB48A3D /* PAPhotoLibraryPermissionsCheck.swift */,
+				21FE82886B09094341459548654423DA /* PAUNNotificationPermissionsCheck.swift */,
+				7DD32FA2C741F69608728F4BB0E3E5CB /* Resources */,
+				91F81B1E05C199FF8DED163B15BD565B /* Support Files */,
+			);
+			name = PAPermissions;
+			path = PAPermissions;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */,
+				09575CDC6E7AF3F9E645B581CF8F9749 /* Pods */,
+				1BF43C4C9077FAA741FFF0974F63D26B /* Products */,
+				19C84C7701DD58D30D8F0FB8AF57D641 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7DD32FA2C741F69608728F4BB0E3E5CB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				99DED8A37A9276D9D8BD79BD0E07D5C5 /* pa_icons.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		91F81B1E05C199FF8DED163B15BD565B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAF4E1E105FFFF7E1EA3667BBCBD891F /* Info.plist */,
+				56CE1DD5D5C52211AB2E4D4972FDD610 /* PAPermissions.modulemap */,
+				3D9B611BB0B9E38A619764EC58B4ED97 /* PAPermissions.xcconfig */,
+				ACF2C5756EF032938B0141804B9E4C4A /* PAPermissions-dummy.m */,
+				2B918BF9951D09FC45E6C698F670FCA7 /* PAPermissions-prefix.pch */,
+				0CBDC54414B816B6A89D633BAD851190 /* PAPermissions-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PAPermissions";
+			sourceTree = "<group>";
+		};
+		B7FB317C5C66462C733B2F427E06CFA4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4060E854A599F55F44980AED9FAB5902 /* AVFoundation.framework */,
+				7C0E41036820626C8492C6EC60B94491 /* CoreBluetooth.framework */,
+				1F34171CA5CF60337A77ECBC5B5AF32D /* CoreLocation.framework */,
+				394F737F789AE3D1D834A08A8CC56112 /* CoreMotion.framework */,
+				92D5F6970F4BDBDD470070980D137FF2 /* Foundation.framework */,
+				BDAA6E67E53545489B209ED707EB1DE9 /* Photos.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9094ADB192F1B662A30B2612AE230B99 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				650CDD07D08307FA4ACC793FEA34521C /* Pods-VideoRecordingDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		956A7E02F81DB379BF84CE29B446AED5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D79CE3B17052723E71524EBE68C167C2 /* PAPermissions-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1D20A377BC0EC578792F2586049F0CEA /* PAPermissions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A0619FFE82FD22F659369C4E2B573D2 /* Build configuration list for PBXNativeTarget "PAPermissions" */;
+			buildPhases = (
+				EDFC0DBFDCE3B287F3C560235218434E /* Sources */,
+				1E91AA560CCD94724B8EF9BE6BF44680 /* Frameworks */,
+				8C5238B588F6F5D307AAEC3E76667CEB /* Resources */,
+				956A7E02F81DB379BF84CE29B446AED5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PAPermissions;
+			productName = PAPermissions;
+			productReference = 475B56E772E614C38D8A04DE68D7C48F /* PAPermissions.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		40C54C476282E8B4D952E355046482B2 /* Pods-VideoRecordingDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A01D222E613374A6C61C3E0A4593B6A /* Build configuration list for PBXNativeTarget "Pods-VideoRecordingDemo" */;
+			buildPhases = (
+				7E9FFF594FE763887C258378308F7DB8 /* Sources */,
+				8AE8E904993FB450A29CE82D4E1E9511 /* Frameworks */,
+				9094ADB192F1B662A30B2612AE230B99 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DB9ABBC3B69215020CF9F9187144D05 /* PBXTargetDependency */,
+			);
+			name = "Pods-VideoRecordingDemo";
+			productName = "Pods-VideoRecordingDemo";
+			productReference = 9D3C9A4BC331CE3C3AB853BDE61D9119 /* Pods_VideoRecordingDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 1BF43C4C9077FAA741FFF0974F63D26B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D20A377BC0EC578792F2586049F0CEA /* PAPermissions */,
+				40C54C476282E8B4D952E355046482B2 /* Pods-VideoRecordingDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C5238B588F6F5D307AAEC3E76667CEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3384609A73F650D2AB7CE9225E6C812 /* pa_icons.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E9FFF594FE763887C258378308F7DB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EF49A697E7E2F0403465C2FE6557C31 /* Pods-VideoRecordingDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDFC0DBFDCE3B287F3C560235218434E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E20A898DFECDF36FAC303B38D58C40BC /* PAABAddressBookCheck.swift in Sources */,
+				6047EA58103B5B41CB2E376100246505 /* PABluetoothPermissionsCheck.swift in Sources */,
+				AD896E154C5288FA8CF86FE4CD2A3870 /* PACameraPermissionsCheck.swift in Sources */,
+				A8D995CA920756161BAA2CFBD63BC464 /* PACNContactsPermissionsCheck.swift in Sources */,
+				220BED4466358F0834C0458FBFE42858 /* PAConstraintsUtils.swift in Sources */,
+				A53F8809BE9F77546B2CF355BDAA080B /* PAEventKitPermissionsCheck.swift in Sources */,
+				FE85B82330385505650B338D07C6FB34 /* PALocationPermissionsCheck.swift in Sources */,
+				6AB629F90AD43DFDB752563384BF9710 /* PAMicrophonePermissionsCheck.swift in Sources */,
+				FCCC245C369F9FCB542BC2B5B07683AC /* PAMotionFitnessPermissionsCheck.swift in Sources */,
+				2C8051D98B8CB9D33C6D93CC94D1F672 /* PANotificationsPermissionsCheck.swift in Sources */,
+				0C546A66D04AF14189DA068FD764E67D /* PAPermissions-dummy.m in Sources */,
+				BBA6FD230F6C53567F982F1DF707636D /* PAPermissionsCheck.swift in Sources */,
+				3848212808ACB594200667F1B0EF0055 /* PAPermissionsTableViewCell.swift in Sources */,
+				30986FFEAB578C78A56785B520E32FD3 /* PAPermissionsView.swift in Sources */,
+				4A4043F6D7D2F62CED2229DAD923D0EF /* PAPermissionsViewController.swift in Sources */,
+				60AE0984D77FC899E590BCF20D466069 /* PAPhotoLibraryPermissionsCheck.swift in Sources */,
+				F708A05577BC8FCDCFFF482E7B31FA88 /* PAUNNotificationPermissionsCheck.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DB9ABBC3B69215020CF9F9187144D05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PAPermissions;
+			target = 1D20A377BC0EC578792F2586049F0CEA /* PAPermissions */;
+			targetProxy = E33B70645CC87A4FF7329C10FB338139 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4C84BD5FCB7D94BE45F43C8FE50DC77C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D9B611BB0B9E38A619764EC58B4ED97 /* PAPermissions.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PAPermissions/PAPermissions-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PAPermissions/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PAPermissions/PAPermissions.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PAPermissions;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		67975A6E5CF4CDF91CF0FE143A4F2DEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27F0BACD3D97B2BF946DCB4DB40CA78F /* Pods-VideoRecordingDemo.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-VideoRecordingDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VideoRecordingDemo/Pods-VideoRecordingDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_VideoRecordingDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		77D2FC3DE7DD68CCDE705CEDDE721900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16A235C4787D138B6200468BF814025B /* Pods-VideoRecordingDemo.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-VideoRecordingDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VideoRecordingDemo/Pods-VideoRecordingDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_VideoRecordingDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9BFC9E4A7AAD7A607ACE06D95A401A5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A2D0E210E71BA0D258D73BA6E387C580 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D9B611BB0B9E38A619764EC58B4ED97 /* PAPermissions.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PAPermissions/PAPermissions-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PAPermissions/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PAPermissions/PAPermissions.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PAPermissions;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C03B8870130C98D1B02B59D003687524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BFC9E4A7AAD7A607ACE06D95A401A5A /* Debug */,
+				C03B8870130C98D1B02B59D003687524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A0619FFE82FD22F659369C4E2B573D2 /* Build configuration list for PBXNativeTarget "PAPermissions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2D0E210E71BA0D258D73BA6E387C580 /* Debug */,
+				4C84BD5FCB7D94BE45F43C8FE50DC77C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A01D222E613374A6C61C3E0A4593B6A /* Build configuration list for PBXNativeTarget "Pods-VideoRecordingDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77D2FC3DE7DD68CCDE705CEDDE721900 /* Debug */,
+				67975A6E5CF4CDF91CF0FE143A4F2DEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
